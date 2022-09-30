@@ -1,3 +1,4 @@
+#include "WString.h"
 #pragma once
 
 #define MESSAGE_SIZE 256
@@ -12,7 +13,10 @@ class FirmwareMessage
     FirmwareMessage& setMessageType(unsigned char messageType);
     unsigned char getMessageType();
 
-    unsigned char getMessageLenght();
+    unsigned char getMessageLength();
+
+    FirmwareMessage& addUnsignedChar(unsigned char value);
+    unsigned char getUnsignedChar();
 
     FirmwareMessage& addChar(char value);
     char getChar();
@@ -23,18 +27,21 @@ class FirmwareMessage
     FirmwareMessage& addInt(int value);
     int getInt();
 
+    FirmwareMessage& addString(String value);
+    String getString();
+
     FirmwareMessage& sendMessage();
 
   private:
-    FirmwareMessage& updateMessageLenght();
+    FirmwareMessage& updateMessageLength();
 
     unsigned char bufferPosition = 0;
-    char messageBuffer[MESSAGE_SIZE];
+    unsigned char messageBuffer[MESSAGE_SIZE];
 };
 
 /*
   $$: Start of message
-  uint8: MessageLenght
+  uint8: MessageLength
   uint8: MessageType
 
   byte[sizeof(type)] : Param1
