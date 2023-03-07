@@ -5,10 +5,11 @@
 
 #define FIRMWARE_VERSION_MESSAGE_TYPE 0
 #define PROGRAM_VERSION_MESSAGE_TYPE 1
+#define LOG_MESSAGE_TYPE 2
 
 class FirmwareBase
 {
-  public:
+public:
     const String FirmwareVersion = "1.0.0";
     
     String ProgramVersion;
@@ -25,9 +26,9 @@ class FirmwareBase
     void sendFirmwareVersion();
     void sendProgramVersion();
 
-    void sendTest();
+    void sendLog(String* log);
 
-  private:
+private:
     bool isMessageStarted = false;
     uint8_t bytesLeft = 4;
 };

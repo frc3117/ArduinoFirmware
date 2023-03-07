@@ -22,14 +22,14 @@ void FirmwareBase::loop()
 
 void FirmwareBase::sendFirmwareVersion()
 {
-    OutgoingMessage.reset().setMessageType(FIRMWARE_VERSION_MESSAGE_TYPE).addString(FirmwareVersion).sendMessage().reset();
+    OutgoingMessage.reset().setMessageType(FIRMWARE_VERSION_MESSAGE_TYPE).addString(&FirmwareVersion).sendMessage().reset();
 }
 void FirmwareBase::sendProgramVersion()
 {
-    OutgoingMessage.reset().setMessageType(PROGRAM_VERSION_MESSAGE_TYPE).addString(ProgramVersion).sendMessage().reset();
+    OutgoingMessage.reset().setMessageType(PROGRAM_VERSION_MESSAGE_TYPE).addString(&ProgramVersion).sendMessage().reset();
 }
 
-void FirmwareBase::sendTest()
+void FirmwareBase::sendLog(String* log)
 {
-    OutgoingMessage.reset().setMessageType(2).addString("fjfijefkewjfiwdfjkedmewdkpdeokd").sendMessage().reset();
+    OutgoingMessage.reset().setMessageType(LOG_MESSAGE_TYPE).addString(log).sendMessage().reset();
 }

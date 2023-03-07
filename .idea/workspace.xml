@@ -22,26 +22,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e9e9a5d-3222-4b5b-821a-6af22e715772" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ArduinoFirmware.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/DigitalInputs.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/DigitalInputs.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareBase.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareBase.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/platformio.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/README" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArduinoFirmware.ino" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArduinoFirmware.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FirmwareBase.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FirmwareBase.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FirmwareMessage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareMessage.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FirmwareMessage.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareMessage.h" afterDir="false" />
+    <list default="true" id="793230a9-2598-4edc-8aef-d8a276267eb6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ArduinoFirmware/DigitalInputs.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/DigitalInputs.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ArduinoFirmware/DigitalInputs.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/DigitalInputs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareMessage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareMessage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareMessage.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareMessage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArduinoFirmware.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArduinoFirmware.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,25 +61,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "clion.platformio.config",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
@@ -97,21 +87,14 @@
       <recent name="$PROJECT_DIR$/lib/ArduinoFirmware" />
     </key>
   </component>
-  <component name="RunManager" selected="PlatformIO.PlatformIO Upload">
+  <component name="RunManager" selected="PlatformIO.PlatformIO Debug">
     <configuration name="Z_DUMMY_TARGET" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ArduinoFirmware" TARGET_NAME="Z_DUMMY_TARGET" CONFIG_NAME="nanoatmega328" RUN_TARGET_PROJECT_NAME="ArduinoFirmware" RUN_TARGET_NAME="Z_DUMMY_TARGET">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PlatformIO Debug" type="platformio" factoryName="PlatformIO Debug" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ArduinoFirmware" TARGET_NAME="Debug" CONFIG_NAME="nanoatmega328" RUN_TARGET_PROJECT_NAME="ArduinoFirmware" RUN_TARGET_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
     <configuration name="PlatformIO Upload" type="platformio" factoryName="PlatformIO Upload" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ArduinoFirmware" TARGET_NAME="Production" CONFIG_NAME="nanoatmega328" RUN_TARGET_PROJECT_NAME="ArduinoFirmware" RUN_TARGET_NAME="Production">
       <method v="2">
@@ -127,13 +110,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8e9e9a5d-3222-4b5b-821a-6af22e715772" name="Changes" comment="" />
+      <changelist id="793230a9-2598-4edc-8aef-d8a276267eb6" name="Changes" comment="" />
       <created>1677958872374</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677958872374</updated>
       <workItem from="1677958873497" duration="15043000" />
       <workItem from="1678146951414" duration="3427000" />
+      <workItem from="1678207584383" duration="209000" />
+      <workItem from="1678207802235" duration="1018000" />
+      <workItem from="1678208849804" duration="4482000" />
+      <workItem from="1678215818536" duration="4795000" />
     </task>
     <servers />
   </component>

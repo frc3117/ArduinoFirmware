@@ -30,4 +30,4 @@ add_custom_target(
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-add_executable(Z_DUMMY_TARGET ${SRC_LIST} lib/ArduinoFirmware/FirmwareMessage.cpp lib/FRC-CAN-Arduino/examples/FRC_CAN_Communication/FRC_CAN_Communication.ino lib/ArduinoFirmware/DigitalInputs.h lib/ArduinoFirmware/DigitalInputs.cpp)
+add_executable(Z_DUMMY_TARGET ${SRC_LIST})

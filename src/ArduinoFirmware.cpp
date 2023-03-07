@@ -21,13 +21,23 @@
 frc::MCP2515 mcp2515{CAN_CS};
 frc::CAN frcCANDevice{0};
 
-frc::DigitalInputs limitSwitches{};
+frc::DigitalInputs digitalInputs{};
 
 FirmwareBase firmware(PROGRAM_VERSION, FIRMWARE_BAUDRATE);
 
 void CANCallback(frc::CAN* can, int apiId, bool rtr, const frc::CANData& data)
 {
-    Serial.println(apiId, HEX);
+    switch (apiId)
+    {
+        case 0: // Set digital input
+            frc::SetDigitalInputMessage message{};
+            memcpy(message.Buffer, data.data, 2);
+
+            digitalInputs.setInput(message.Message.Info.Pin, message.Message.Index, message.Message.Info.Reversed);
+            break;
+    }
+
+    Serial.println(apiId);
 }
 
 void setup()
@@ -43,29 +53,22 @@ void setup()
     frc::CAN::SetCANImpl(&mcp2515, CAN_INTERRUPT, CANCallback, nullptr);
     frcCANDevice.AddToReadList();
 
-    limitSwitches.addInput(SEGMENT_0_MIN);
-    limitSwitches.addInput(SEGMENT_0_MAX);
+    digitalInputs.init();
 
-    limitSwitches.addInput(SEGMENT_1_MIN);
-    limitSwitches.addInput(SEGMENT_1_MAX);
+    digitalInputs.setInput(SEGMENT_0_MIN, 0);
+    digitalInputs.setInput(SEGMENT_0_MAX, 1);
 
-    limitSwitches.addInput(SEGMENT_2_MIN);
-    limitSwitches.addInput(SEGMENT_2_MAX);
+    digitalInputs.setInput(SEGMENT_1_MIN, 2);
+    digitalInputs.setInput(SEGMENT_1_MAX, 3);
+
+    digitalInputs.setInput(SEGMENT_2_MIN, 4);
+    digitalInputs.setInput(SEGMENT_2_MAX, 5);
 }
-
-unsigned long long lastSent = 0;
 
 void loop() 
 {
     firmware.loop();
     frc::CAN::Update();
 
-    auto now = millis();
-    if (now - lastSent > 20)
-    {
-        lastSent = now;
-
-        auto packet = limitSwitches.generatePacket(false);
-        frcCANDevice.WritePacket(packet.data, 8, 0);
-    }
+    digitalInputs.loop(&frcCANDevice);
 }

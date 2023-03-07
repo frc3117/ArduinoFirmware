@@ -5,38 +5,40 @@
 
 class FirmwareMessage
 {
-  public:
+public:
     FirmwareMessage();
 
-    FirmwareMessage& reset();
+    FirmwareMessage reset();
 
-    FirmwareMessage& setMessageType(uint8_t messageType);
+    FirmwareMessage setMessageType(uint8_t messageType);
     uint8_t getMessageType();
 
     uint8_t getMessageLength();
 
-    FirmwareMessage& addBytes(void* value, uint8_t length);
+    FirmwareMessage addBytes(void* value, uint8_t length);
+    FirmwareMessage addBytes(const void *value, uint8_t length);
     void* getBytes(void* value, unsigned char length);
 
-    FirmwareMessage& addUnsignedChar(unsigned char value);
+    FirmwareMessage addUnsignedChar(unsigned char value);
     unsigned char getUnsignedChar();
 
-    FirmwareMessage& addChar(char value);
+    FirmwareMessage addChar(char value);
     char getChar();
 
-    FirmwareMessage& addShort(short value);
+    FirmwareMessage addShort(short value);
     short getShort();
 
-    FirmwareMessage& addInt(int value);
+    FirmwareMessage addInt(int value);
     int getInt();
 
-    FirmwareMessage& addString(String value);
+    FirmwareMessage addString(String* value);
+    FirmwareMessage addString(const String* value);
     String getString();
 
-    FirmwareMessage& sendMessage();
+    FirmwareMessage sendMessage();
 
-  private:
-    FirmwareMessage& updateMessageLength();
+private:
+    FirmwareMessage updateMessageLength();
 
     uint8_t bufferPosition = 0;
     uint8_t messageBuffer[MESSAGE_SIZE]{};
