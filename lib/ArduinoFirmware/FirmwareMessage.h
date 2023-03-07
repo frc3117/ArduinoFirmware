@@ -10,10 +10,13 @@ class FirmwareMessage
 
     FirmwareMessage& reset();
 
-    FirmwareMessage& setMessageType(unsigned char messageType);
-    unsigned char getMessageType();
+    FirmwareMessage& setMessageType(uint8_t messageType);
+    uint8_t getMessageType();
 
-    unsigned char getMessageLength();
+    uint8_t getMessageLength();
+
+    FirmwareMessage& addBytes(void* value, uint8_t length);
+    void* getBytes(void* value, unsigned char length);
 
     FirmwareMessage& addUnsignedChar(unsigned char value);
     unsigned char getUnsignedChar();
@@ -35,8 +38,8 @@ class FirmwareMessage
   private:
     FirmwareMessage& updateMessageLength();
 
-    unsigned char bufferPosition = 0;
-    unsigned char messageBuffer[MESSAGE_SIZE];
+    uint8_t bufferPosition = 0;
+    uint8_t messageBuffer[MESSAGE_SIZE]{};
 };
 
 /*
