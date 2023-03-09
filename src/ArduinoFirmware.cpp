@@ -11,8 +11,8 @@
 #define CAN_CS 4
 #define CAN_INTERRUPT 2
 
-#define SEGMENT_0_MIN 8
-#define SEGMENT_0_MAX 9
+#define SEGMENT_0_MIN 9
+#define SEGMENT_0_MAX 8
 #define SEGMENT_1_MIN 3
 #define SEGMENT_1_MAX 5
 #define SEGMENT_2_MIN 6
@@ -55,14 +55,14 @@ void setup()
 
     digitalInputs.init();
 
-    digitalInputs.setInput(SEGMENT_0_MIN, 0);
-    digitalInputs.setInput(SEGMENT_0_MAX, 1);
+    /*digitalInputs.setInput(SEGMENT_0_MIN, 0, true);
+    digitalInputs.setInput(SEGMENT_0_MAX, 1, true);
 
-    digitalInputs.setInput(SEGMENT_1_MIN, 2);
-    digitalInputs.setInput(SEGMENT_1_MAX, 3);
+    digitalInputs.setInput(SEGMENT_1_MIN, 2, true);
+    digitalInputs.setInput(SEGMENT_1_MAX, 3, true);
 
-    digitalInputs.setInput(SEGMENT_2_MIN, 4);
-    digitalInputs.setInput(SEGMENT_2_MAX, 5);
+    digitalInputs.setInput(SEGMENT_2_MIN, 4, true);
+    digitalInputs.setInput(SEGMENT_2_MAX, 5, true);*/
 }
 
 void loop() 

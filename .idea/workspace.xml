@@ -24,13 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="793230a9-2598-4edc-8aef-d8a276267eb6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ArduinoFirmware/DigitalInputs.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/DigitalInputs.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ArduinoFirmware/DigitalInputs.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/DigitalInputs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareMessage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareMessage.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareMessage.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArduinoFirmware/FirmwareMessage.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ArduinoFirmware.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArduinoFirmware.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,8 +82,13 @@
       <recent name="$PROJECT_DIR$/lib/ArduinoFirmware" />
     </key>
   </component>
-  <component name="RunManager" selected="PlatformIO.PlatformIO Debug">
+  <component name="RunManager" selected="PlatformIO.PlatformIO Upload">
     <configuration name="Z_DUMMY_TARGET" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ArduinoFirmware" TARGET_NAME="Z_DUMMY_TARGET" CONFIG_NAME="nanoatmega328" RUN_TARGET_PROJECT_NAME="ArduinoFirmware" RUN_TARGET_NAME="Z_DUMMY_TARGET">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>

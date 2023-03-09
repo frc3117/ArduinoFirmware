@@ -1,6 +1,6 @@
 #pragma once
 
-#include "frc_CAN.h"
+#include "../FRC-CAN-Arduino/frc_CAN.h"
 
 #include "stdint.h"
 
